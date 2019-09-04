@@ -1,0 +1,5 @@
+C:\ProjetosTFS\CSharpTest.Modelo\bin\Debug\CSharpTest.Modelo.dll
+C:\ProjetosTFS\CSharpTest.Modelo\bin\Debug\CSharpTest.Modelo.pdb
+C:\ProjetosTFS\CSharpTest.Modelo\obj\Debug\CSharpTest.Modelo.csprojResolveAssemblyReference.cache
+C:\ProjetosTFS\CSharpTest.Modelo\obj\Debug\CSharpTest.Modelo.dll
+C:\ProjetosTFS\CSharpTest.Modelo\obj\Debug\CSharpTest.Modelo.pdb

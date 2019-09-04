@@ -1,0 +1,134 @@
+﻿@model IEnumerable<CSharpTest.Models.VeiculoViewModels>
+
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>*@
+@*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>*@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-info">
+                        <h4 class="card-title">Pesquisar Chassi</h4>
+                        @*<p class="card-category"> Here is a subtitle for this table</p>*@
+                    </div>
+                    <div class="card-body">
+                        @using (@Html.BeginForm("Index", "PesquisarVeiculo", FormMethod.Post, new { @id = "" }))
+                        {
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+
+                                        @Html.EditorFor(model => model.FirstOrDefault().COD_CHASSI, new { htmlAttributes = new { @class = "form-control updateAddress", @autocomplete = "off" } })
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <button id="Search" type="submit" class="btn btn-info"><i class="glyphicon glyphicon-search"></i> Pesquisar</button>
+                                </div>
+                            </div>
+
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="text-dark">
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.COD_CHASSI)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayName("Tipo Veiculo")
+                                    </th>
+                                    <th>
+                                        @Html.DisplayName("Número de Passageiros")
+                                    </th>
+                                    <th>
+                                        @Html.DisplayName("Cor do Veículo")
+                                    </th>
+                                    <th>
+                                        @Html.DisplayName("Data Cadastro")
+                                    </th>
+                                    <th>
+                                        @Html.DisplayName("Data Alteração")
+                                    </th>
+
+                                    <th>@Html.DisplayName("Editar Veículo")</th>
+                                    <th>@Html.DisplayName("Excluir Veículo")</th>
+                                    </thead>
+
+
+
+                                    @foreach (var item in Model)
+                                    {
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.COD_CHASSI)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.TIPO_VEICULO)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.NUM_PASSAGEIROS)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.COR)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.DT_CADASTRO)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.DT_ALTERACAO)
+                                                </td>
+                                                <td class="glyphicon glyphicon-edit">@Html.ActionLink("Editar", "Update", "CadastrarVeiculo", new { id = item.COD_CHASSI })</td>
+                                                <td>@Html.ActionLink("Excluir", "Delete", "PesquisarVeiculo", new { id = item.COD_CHASSI })</td>
+                                            </tr>
+                                        </tbody>
+                                    }
+
+
+                                </table>
+                            </div>
+                        }
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        @*<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Excluir Veículo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Tem certeza que deseja excluir este veículo?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+    </div>
+
+</div>
+

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CSharpTestStoreContainer" CdmEntityContainer="CSharpTestEntities">
+    <EntitySetMapping Name="TB_CHASSI">
+      <EntityTypeMapping TypeName="CSharpTest.TB_CHASSI">
+        <MappingFragment StoreEntitySet="TB_CHASSI">
+          <ScalarProperty Name="COD_CHASSI" ColumnName="COD_CHASSI" />
+          <ScalarProperty Name="TIPO_VEICULO" ColumnName="TIPO_VEICULO" />
+          <ScalarProperty Name="NUM_PASSAGEIROS" ColumnName="NUM_PASSAGEIROS" />
+          <ScalarProperty Name="DT_CADASTRO" ColumnName="DT_CADASTRO" />
+          <ScalarProperty Name="DT_ALTERACAO" ColumnName="DT_ALTERACAO" />
+          <ScalarProperty Name="COR" ColumnName="COR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

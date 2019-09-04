@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CSharpTest" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TB_CHASSI">
+    <Key>
+      <PropertyRef Name="COD_CHASSI" />
+    </Key>
+    <Property Name="COD_CHASSI" Type="String" MaxLength="17" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TIPO_VEICULO" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NUM_PASSAGEIROS" Type="Int32" Nullable="false" />
+    <Property Name="DT_CADASTRO" Type="DateTime" Precision="3" />
+    <Property Name="DT_ALTERACAO" Type="DateTime" Precision="3" />
+    <Property Name="COR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="CSharpTestEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_CHASSI" EntityType="Self.TB_CHASSI" />
+  </EntityContainer>
+</Schema>

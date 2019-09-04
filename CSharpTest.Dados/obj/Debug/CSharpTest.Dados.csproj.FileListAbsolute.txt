@@ -1,0 +1,12 @@
+C:\ProjetosTFS\CSharpTest.Dados\bin\Debug\CSharpTest.Dados.dll.config
+C:\ProjetosTFS\CSharpTest.Dados\bin\Debug\CSharpTest.Dados.dll
+C:\ProjetosTFS\CSharpTest.Dados\bin\Debug\CSharpTest.Dados.pdb
+C:\ProjetosTFS\CSharpTest.Dados\bin\Debug\CSharpTest.Modelo.dll
+C:\ProjetosTFS\CSharpTest.Dados\bin\Debug\EntityFramework.dll
+C:\ProjetosTFS\CSharpTest.Dados\bin\Debug\EntityFramework.SqlServer.dll
+C:\ProjetosTFS\CSharpTest.Dados\bin\Debug\CSharpTest.Modelo.pdb
+C:\ProjetosTFS\CSharpTest.Dados\bin\Debug\EntityFramework.xml
+C:\ProjetosTFS\CSharpTest.Dados\bin\Debug\EntityFramework.SqlServer.xml
+C:\ProjetosTFS\CSharpTest.Dados\obj\Debug\CSharpTest.Dados.csprojResolveAssemblyReference.cache
+C:\ProjetosTFS\CSharpTest.Dados\obj\Debug\CSharpTest.Dados.dll
+C:\ProjetosTFS\CSharpTest.Dados\obj\Debug\CSharpTest.Dados.pdb

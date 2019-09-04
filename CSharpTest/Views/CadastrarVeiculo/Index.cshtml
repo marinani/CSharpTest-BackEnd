@@ -1,0 +1,60 @@
+﻿@model CSharpTest.Modelo.VeiculoViewModel
+
+@*@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}*@
+
+
+<div class="content">
+    <div class="container-fluid">
+       
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-info">
+                        <h4 class="card-title">Novo Veículo</h4>
+                        <p class="card-category">Cadastre seu veículo</p>
+                    </div>
+                    @Html.ValidationSummary()
+                    <div class="card-body">
+                        <form>
+                            @using (@Html.BeginForm("Index", "CadastrarVeiculo", FormMethod.Post))
+                            {
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <div class="form-group">
+                                            @Html.LabelFor(i => i.COD_CHASSI)
+                                            @Html.TextBoxFor(i => i.COD_CHASSI, new { @class = "form-control" })
+                                        </div>
+                                    </div>                                  
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            @Html.LabelFor(i => i.TIPO_VEICULO)
+                                            @Html.DropDownListFor(i => i.TIPO_VEICULO, CSharpTest.Models.VeiculoViewModels.LISTA_TIPO_VEICULO, "Selecione", new { @class = "dropdown form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            @Html.LabelFor(i => i.NUM_PASSAGEIROS)
+                                            @Html.TextBoxFor(i => i.NUM_PASSAGEIROS, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            @Html.LabelFor(i => i.COR)
+                                          @Html.TextBoxFor(i => i.COR, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-info pull-right">Cadastrar Veículo</button>
+                              
+                            }
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
